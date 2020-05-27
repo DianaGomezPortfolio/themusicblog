@@ -12,8 +12,13 @@ body{
   font-family: sans-serif;
 }
 
+.main-container{
+  width: 100%px;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
 .contenedor{
-  width: 1200px;
+  width: 100%px;
   margin: 0 auto;
 }
 
@@ -83,10 +88,13 @@ body{
 
 .main .banner .contenedor .banner-principal{
   width: 100%;
+  box-sizing:border-box;
 }
 
 .main .banner .contenedor .banner-principal img{
   width: 100%;
+    height: auto;
+  box-sizing:border-box;
 }
 
 /*Blog*/
@@ -98,6 +106,7 @@ body{
 
 .blog .contenedor{
   overflow: hidden;
+  box-sizing:border-box;
 }
 
 /*Articulos blog*/
@@ -140,6 +149,7 @@ body{
 
 .blog .contenedor .articulos-blog .articulo img{
   width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -177,6 +187,7 @@ body{
 .aside{
   float: right;
   width: 28%;
+  box-sizing:border-box;
 }
 
 .aside .widget{
@@ -184,6 +195,7 @@ body{
   padding: 40px;
   margin-bottom: 20px;
   border: 1px solid #f0f0f0;
+  box-sizing:border-box;
 }
 
 .aside .widget .artista-widget .foto-artista{
@@ -192,7 +204,8 @@ body{
 }
 
 .aside .widget .artista-widget .foto-artista img{
-  width: 250px;
+  width: 90%;
+  height: auto;
 }
 
 .aside .widget .artista-widget .datos-artista{
@@ -264,8 +277,7 @@ body{
   color: #fff;
 }
 
-
-/*Footer*/
+/*FOOTER*/
 
 .footer{
   background: #fff;
@@ -273,4 +285,55 @@ body{
   border: 1px solid #f0f0f0;
   text-align: center;
   color: #9c9c9c;
+  width: 100%px;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+
+.footer .contenedor{
+  width: 100%px;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+
+@media screen and (max-width:800px){
+	.banner{
+	 width:100%;
+	}
+	.titulo-blog .contenedor h1 a{
+	font-size: 60px;
+	}
+	.menu-principal{
+	 width:100%;
+	}
+	.blog{
+	 width:100%;
+	}
+
+	.blog .contenedor .articulos-blog{
+	  width: 100%;
+	}
+	.articulo{
+	 width:100%;
+	}
+	.aside{
+	 width:100%;
+	}
+}
+
+@media screen and (max-width:400px){
+	.main-container{
+	 width:100%;
+	}
+	.titulo-blog .contenedor h1 a{
+	font-size: 40px;
+	}
+	.titulo-blog .contenedor .subtitulo{
+	font-size: 10px;
+	}
+	.menu-principal .contenedor ul li a{
+	font-size: 10px;
+	}
+}
+
 }
